@@ -38,8 +38,9 @@ spec:
           dns:
             port: 53
             protocol: UDP
+            targetPort: 53
       dns-udp:
-        enabled: true
+        enabled: false
         type: NodePort
         ports:
           dns-udp:
