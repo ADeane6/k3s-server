@@ -31,9 +31,11 @@ spec:
               - "adguard-home.${SECRET_DOMAIN}"
     service:
       dns-udp:
+        enabled: false
+      dns:
         enabled: true
         ports:
-          dns-udp:
+          dns:
             enabled: true
             port: 53
             protocol: UDP
