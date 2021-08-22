@@ -30,8 +30,6 @@ spec:
           - hosts:
               - "adguard-home.${SECRET_DOMAIN}"
     service:
-      dns-udp:
-        enabled: false
       dns:
         enabled: true
         ports:

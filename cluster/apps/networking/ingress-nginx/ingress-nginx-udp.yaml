@@ -9,6 +9,7 @@ metadata:
 spec:
   type: LoadBalancer
   loadBalancerIP: 10.0.1.102
+  externalTrafficPolicy: Local
   ports:
     - name: dns-53
       port: 53
