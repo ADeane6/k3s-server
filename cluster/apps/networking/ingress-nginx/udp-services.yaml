@@ -5,4 +5,4 @@ metadata:
   name: udp-services
   namespace: networking
 data:
-  53: "default/adguard-home:53"
+  53: "default/adguard-home-dns:53"
