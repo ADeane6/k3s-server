@@ -36,11 +36,6 @@ spec:
             enabled: true
             port: 10001
             protocol: UDP
-      tcp:
-        enabled: true
-        type: LoadBalancer
-        loadBalancerIP: 10.0.1.104
-        ports:
           https:
             enabled: true
             port: 443
