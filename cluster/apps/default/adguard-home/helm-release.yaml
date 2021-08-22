@@ -31,6 +31,8 @@ spec:
               - "adguard-home.${SECRET_DOMAIN}"
     service:
       dns:
+        type: LoadBalancer
+        loadBalancerIP: 10.0.1.103
         enabled: true
         ports:
           dns:
