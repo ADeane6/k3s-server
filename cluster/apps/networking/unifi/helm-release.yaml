@@ -24,33 +24,35 @@ spec:
         type: LoadBalancer
         loadBalancerIP: 10.0.1.104
         ports:
-          http:
+          httplb:
+            enabled: true
             port: 8443
-          controller:
+            protocol: HTTPS
+          controllerlb:
             enabled: true
             port: 8080
             protocol: TCP
-          portal-http:
+          portal-httplb:
             enabled: false
             port: 8880
             protocol: HTTP
-          portal-https:
+          portal-httpslb:
             enabled: false
             port: 8843
             protocol: HTTPS
-          speedtest:
+          speedtestlb:
             enabled: true
             port: 6789
             protocol: TCP
-          stun:
+          stunlb:
             enabled: true
             port: 3478
             protocol: UDP
-          syslog:
+          sysloglb:
             enabled: true
             port: 5514
             protocol: UDP
-          discovery:
+          discoverylb:
             enabled: true
             port: 10001
             protocol: UDP
