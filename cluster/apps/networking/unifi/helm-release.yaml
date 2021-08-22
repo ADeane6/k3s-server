@@ -19,7 +19,7 @@ spec:
     env:
       TZ: 'Ireland/Dublin'
     service:
-      udp:
+      lb:
         enabled: true
         type: LoadBalancer
         loadBalancerIP: 10.0.1.104
