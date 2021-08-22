@@ -23,6 +23,7 @@ spec:
         enabled: true
         type: LoadBalancer
         loadBalancerIP: 10.0.1.104
+        externalTrafficPolicy: Local
         ports:
           httplb:
             enabled: true
@@ -56,3 +57,8 @@ spec:
             enabled: true
             port: 10001
             protocol: UDP
+    persistence:
+      config:
+        enabled: true
+        existingClaim: unifi-config
+        mountPath: /var/lib/unifi
