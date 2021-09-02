@@ -22,7 +22,7 @@ spec:
       lb:
         enabled: true
         type: LoadBalancer
-        loadBalancerIP: 10.0.1.104
+        loadBalancerIP: "${UNIFI_LB}"
         externalTrafficPolicy: Local
         ports:
           httplb:
