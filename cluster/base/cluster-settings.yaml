@@ -5,8 +5,8 @@ metadata:
   name: cluster-settings
   namespace: flux-system
 data:
-  METALLB_LB_RANGE: 10.0.0.1-10.0.0.128
-  INGRESS_NGINX_LB: 10.0.0.1
-  UNIFI_LB: 10.0.0.2
-  HOME_ASSISTANT_LB: 10.0.0.3
-  ADGUARD_LB: 10.0.0.4
+  METALLB_LB_RANGE: 10.0.0.2-10.0.0.128
+  INGRESS_NGINX_LB: 10.0.0.2
+  UNIFI_LB: 10.0.0.3
+  HOME_ASSISTANT_LB: 10.0.0.4
+  ADGUARD_LB: 10.0.0.5
