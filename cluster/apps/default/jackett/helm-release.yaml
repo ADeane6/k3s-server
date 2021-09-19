@@ -19,11 +19,15 @@ spec:
     env:
       TZ: "Europe/London"
     service:
-      main:
+      lb:
         type: LoadBalancer
         loadBalancerIP: "${JACKETT_LB}"
         externalTrafficPolicy: Local
         enabled: true
+        ports:
+          http-lb:
+            port: 9117
+            protocol: HTTP
     ingress:
       main:
         enabled: true
