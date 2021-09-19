@@ -22,7 +22,21 @@ spec:
       main:
         type: LoadBalancer
         loadBalancerIP: "${JACKETT_LB}"
+        externalTrafficPolicy: Local
         enabled: true
+    ingress:
+      main:
+        enabled: true
+        annotations:
+          kubernetes.io/ingress.class: "nginx"
+        hosts:
+          - host: "jackett.${SECRET_DOMAIN}"
+            paths:
+              - path: /
+                pathType: Prefix
+        tls:
+          - hosts:
+              - "jackett.${SECRET_DOMAIN}"
     persistence:
       config:
         enabled: true
