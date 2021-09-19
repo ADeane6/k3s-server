@@ -23,11 +23,6 @@ spec:
         type: LoadBalancer
         loadBalancerIP: "${JACKETT_LB}"
         enabled: true
-        ports:
-          main:
-            enabled: true
-            port: 9117
-            protocol: HTTP
     persistence:
       config:
         enabled: true
