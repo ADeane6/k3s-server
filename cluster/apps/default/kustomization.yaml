@@ -6,3 +6,5 @@ resources:
   - home-assistant
   - jackett
   - xteve
+  - overseerr
+  - readarr
