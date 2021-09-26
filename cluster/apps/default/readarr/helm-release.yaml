@@ -21,6 +21,16 @@ spec:
     service:
       main:
         enabled: true
+      lb:
+        type: LoadBalancer
+        loadBalancerIP: "${READARR_LB}"
+        externalTrafficPolicy: Local
+        enabled: true
+        ports:
+          http-lb:
+            enabled: true
+            port: 8787
+            protocol: HTTP
     ingress:
       main:
         enabled: true
